@@ -13,28 +13,24 @@
 
   <div class="field form-group">
     <% form.label :first_name %>
-    <%= form.text_field :first_name, class:"form-control", placeholder:"First Name" %>
+    <%= form.text_field :first_name, class:"form-control", placeholder:"Memory Title :" %>
   </div>
 
   <div class="field form-group">
     
-    <%= form.text_field :last_name, class:"form-control", placeholder:"Last Name" %>
+    <%= form.text_field :last_name, class:"form-control", placeholder:"Link to Confirm" %>
   </div>
 
   <div class="field form-group">
     
-    <%= form.text_field :email, class:"form-control", placeholder:"Email" %>
+    <%= form.text_field :email, class:"form-control", placeholder:"Year" %>
   </div>
 
   <div class="field form-group">
     
-    <%= form.text_field :phone, class:"form-control", placeholder:"Phone Number" %>
+    <%= form.text_field :phone, class:"form-control", placeholder:"Describe" %>
   </div>
 
-  <div class="field form-group">
-    
-    <%= form.text_field :twitter, class:"form-control", placeholder:"Twitter" %>
-  </div>
   <div class="field form-group">
     
     <%= form.number_field :user_id, id: :friend_user_id, class:"form-control", value: current_user.id, type: :hidden %>
@@ -42,6 +38,6 @@
   
 <br/>
   <div class="actions">
-    <%= form.submit class:'btn btn-secondary' %>
+   <%= form.submit class:'btn btn-secondary' %>
   </div>
 <% end %>
